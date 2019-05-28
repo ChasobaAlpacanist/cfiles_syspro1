@@ -123,7 +123,7 @@ FILE *export_signal(double *num_array, int array_size, FILE *export_file){
 //ファイルへの複素数データ出力
 FILE *export_complex_signal(double complex *num_array, int array_size, FILE *export_file){
   for(int i = 0; i < array_size; i++){
-    fprintf(export_file, "%d, %lf + %lf I\n", i, creal(num_array[i]), cimag(num_array[i]));
+    fprintf(export_file, "%d, %lf, %lf\n", i, creal(num_array[i]), cimag(num_array[i]));
   }
   return export_file;
 }

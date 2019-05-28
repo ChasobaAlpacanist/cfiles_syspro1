@@ -231,7 +231,7 @@ double *signal_gen(double *signal_array, int data_num){
       scanf("%lf", &a_amp);
       assert(a_amp > 0);
 
-      printf("矩形波の周波数(1 / 2*γ)を入力:");
+      printf("矩形波の周波数(γ)を入力:");
       scanf("%lf", &a_fre);
 
       printf("サンプリング周波数を入力(正の値):");
