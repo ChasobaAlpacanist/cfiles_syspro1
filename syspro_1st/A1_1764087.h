@@ -13,7 +13,7 @@
   @return (double *) 入力された配列のポインタを返す。
   @attention array_sizeは非零自然数
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
  double *input_array(int array_size);
@@ -27,7 +27,7 @@
   @return void
   @attention array_sizeはnum_array[]の配列数と同じでなければならない。
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 void print_array(double *num_array, int array_size);
@@ -41,7 +41,7 @@ void print_array(double *num_array, int array_size);
   @return (double *) 入力された配列を返す
   @attention ファイルは改行ごとに異なる要素とする
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *input_array_from_file(FILE *input_file);
@@ -57,7 +57,7 @@ double *input_array_from_file(FILE *input_file);
   @attention
   @per 更新履歴　array_sizeはnum_arrayのサイズと等しくなければならない。
                export_fileは書き込み状態で開いている必要がある。
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 FILE *export_array(double *num_array, int array_size, FILE *export_file);
@@ -70,7 +70,7 @@ FILE *export_array(double *num_array, int array_size, FILE *export_file);
   @return (int) カウント数を返す
   @attention ファイル内データは改行により別の要素とする。
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 int count_file_data(FILE *file);
@@ -85,7 +85,7 @@ int count_file_data(FILE *file);
   @return (double *) 初期化後の配列を返す。
   @attention 配列数とarray_sizeは等しくなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *number_array_intialize(double *num_array, int array_size, double initial_num);
@@ -99,7 +99,7 @@ double *number_array_intialize(double *num_array, int array_size, double initial
   @return (double *) 初期化後の配列を返す。
   @attention 配列数とarray_sizeは等しくなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *random_array_intialize(double *num_array, int array_size);
@@ -115,7 +115,7 @@ double *random_array_intialize(double *num_array, int array_size);
   @return (double *) 変更後の配列を返す。
   @attention
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *change_array_size(double *num_array, int array_size);
@@ -134,7 +134,7 @@ double *change_array_size(double *num_array, int array_size);
              関数中に最大または最小を選ぶ。最大 -> 1, 最小 -> -1
              それ以外の値を入力するとエラーが発生する。
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double search_array_num_maxmin(double *num_array, int array_size);
@@ -151,7 +151,7 @@ double search_array_num_maxmin(double *num_array, int array_size);
              関数中で入力により最大または最小を選ぶ。最大 -> 1, 最小 -> -1
              それ以外の値を入力するとエラーが発生する。
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 int search_array_index_maxmin(double *num_array, int array_size);
@@ -167,7 +167,7 @@ int search_array_index_maxmin(double *num_array, int array_size);
   @attention array_sizeは配列の要素数と等しくならなければならない
              目的の要素が存在しなかった時は-1を返す。
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 int search_array_index_num(double *num_array, int array_size, double num);
@@ -184,7 +184,7 @@ int search_array_index_num(double *num_array, int array_size, double num);
              num_arrayとsorted_num_arrayのサイズは等しくなければならない。
              関数中で昇順か降順かを入力する。 昇順 -> 1, 降順 -> -1
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *sort_array(double *num_array, double *sorted_num_array, int array_size);
@@ -200,7 +200,7 @@ double *sort_array(double *num_array, double *sorted_num_array, int array_size);
   @attention array_sizeは配列の要素数と等しくならなければならない
              num_arrayとsorted_num_arrayのサイズは等しくなければならない。
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *inverse_array(double *num_array, double *sorted_num_array, int array_size);
@@ -216,7 +216,7 @@ double *inverse_array(double *num_array, double *sorted_num_array, int array_siz
   @attention array_sizeは配列の要素数と等しくならなければならない
              sorted_num_arrayのサイズがnum_arrayのサイズより大きくならなければならない。
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *copy_array(double *num_array, double *sorted_num_array, int array_size);
@@ -234,7 +234,7 @@ double *copy_array(double *num_array, double *sorted_num_array, int array_size);
   @return (double *) シフト演算後の配列
   @attention array_sizeは配列の要素数と等しくならなければならない, shift_size <= array_size
   @per 更新履歴
-    - 2018/05/22
+    - 2019/05/22
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *shift_array(double *num_array, int array_size, int shift_size);
@@ -250,7 +250,7 @@ double *shift_array(double *num_array, int array_size, int shift_size);
   @return (double *) 加算結果を格納した配列のポインタを返す
   @attention num_array1とnum_array2のサイズはarray_sizeと等しくなければならない
   @per 更新履歴
-    - 2018/05/15 作成
+    - 2019/05/15 作成
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *sum_arrays(double *num_array1, double *num_array2, int array_size, double *res_array);
@@ -266,7 +266,7 @@ double *sum_arrays(double *num_array1, double *num_array2, int array_size, doubl
   @return (double *) 減算結果を格納した配列のポインタを返す
   @attention num_array1とnum_array2のサイズはarray_sizeと等しくなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *dif_arrays(double *num_array1, double *num_array2, int array_size, double *res_array);
@@ -281,7 +281,7 @@ double *dif_arrays(double *num_array1, double *num_array2, int array_size, doubl
   @return (double *) 絶対値演算後の配列
   @attention array_sizeは配列の要素数と等しくならなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double *abs_array(double *num_array, int array_size);
@@ -296,7 +296,7 @@ double *abs_array(double *num_array, int array_size);
   @return (double) 総和計算結果を返す。
   @attention array_sizeは配列の要素数と等しくならなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double sum_array(double *num_array, int array_size);
@@ -310,7 +310,7 @@ double sum_array(double *num_array, int array_size);
   @return (double) 平均の計算結果を返す。
   @attention array_sizeは配列の要素数と等しくならなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double mean_array(double *num_array, int array_size);
@@ -324,7 +324,7 @@ double mean_array(double *num_array, int array_size);
   @return (double) 標準偏差の計算結果を返す。
   @attention array_sizeは配列の要素数と等しくならなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double sd_array(double *num_array, int array_size);
@@ -338,7 +338,7 @@ double sd_array(double *num_array, int array_size);
   @return (double) 標準偏差の計算結果を返す。
   @attention array_sizeは配列の要素数と等しくならなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double cv_array(double *num_array, int array_size);
@@ -352,7 +352,7 @@ double cv_array(double *num_array, int array_size);
   @return (double) 配列の中央値を返す。
   @attention array_sizeは配列の要素数と等しくならなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double search_median_array(double *num_array, int array_size);
@@ -368,7 +368,7 @@ double search_median_array(double *num_array, int array_size);
   @return (int) 条件を満たす要素数を返す。
   @attention array_sizeは配列の要素数と等しくならなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double countif_array(double *num_array, int array_size, double number);
@@ -384,7 +384,7 @@ double countif_array(double *num_array, int array_size, double number);
   @return (double) 条件を満たす要素の総和を返す。
   @attention array_sizeは配列の要素数と等しくならなければならない
   @per 更新履歴
-    - 2018/05/15
+    - 2019/05/15
       基本的な機能の実装(by 1764087 木村慶豪)
 */
 double sumif_array(double *num_array, int array_size, double number);

@@ -58,7 +58,7 @@ int main(void){
   printf("一括更新学習法による線形システムの係数決定を行います\n");
   printf("**********************************************************\n");
   /*printf("訓練データセットの作成を行います");
-  train_dataset = gen_multidim_detaset(DATA_SIZE, D2);*/
+  train_dataset = gen_multidim_dataset(DATA_SIZE, D2);*/
   printf("学習率を指定してください:");
   scanf("%lf", &learning_rate);
   printf("学習の繰り返し計算の最大回数を指定してください:");
@@ -70,7 +70,7 @@ int main(void){
   printf("逐次更新学習法による線形システムの係数決定を行います\n");
   printf("**********************************************************\n");
   /*printf("訓練データセットの作成を行います");
-  train_dataset = gen_multidim_detaset(DATA_SIZE, D2);*/
+  train_dataset = gen_multidim_dataset(DATA_SIZE, D2);*/
   printf("学習率を指定してください:");
   scanf("%lf", &learning_rate);
   printf("学習の繰り返し計算の最大回数を指定してください:");
@@ -78,6 +78,6 @@ int main(void){
   coeff = grad_inc_linear_sys(learning_rate, train_dataset, DATA_SIZE, iteration_times);
   printf("学習率%lf, 逐次最大繰り返し回数%d -> パラメータaは%lf\n", learning_rate, iteration_times, coeff);
 
-  free_detaset(train_dataset, DATA_SIZE);
+  free_dataset(train_dataset, DATA_SIZE);
   return 1;
 }

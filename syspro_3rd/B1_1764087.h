@@ -25,7 +25,7 @@
              false -> sin信号
 
   @per 更新履歴
-    - 2018/05/22
+    - 2019/05/22
       基本的な機能の実装(by 1764087 木村慶豪)
 */
  double *gen_signal(double amp, double fre, int data_num, double sampling_rate, bool issin, double value_offset);
@@ -45,7 +45,7 @@
               0の時に0を返す。
 
    @per 更新履歴
-     - 2018/05/22
+     - 2019/05/22
        基本的な機能の実装(by 1764087 木村慶豪)
  */
  double *gen_square_signal(double amp, double fre, int data_num, double sampling_rate);
@@ -66,7 +66,7 @@
               sampling_num / サンプル秒 * 2 > 2 * M_PI * 原信号周波数を確認
 
    @per 更新履歴
-     - 2018/05/22
+     - 2019/05/22
        基本的な機能の実装(by 1764087 木村慶豪)
  */
  double *sampling_signal(double *input_signal, int signal_size, int sampling_num);
@@ -83,7 +83,7 @@
    @attention sample_numはsignal_sizeより小さくなければならない。
 
    @per 更新履歴
-     - 2018/05/23
+     - 2019/05/23
        基本的な機能の実装(by 1764087 木村慶豪)
  */
  double complex *dft_signal(double *input_signal, int signal_size, int sampling_num);
@@ -101,7 +101,7 @@
    @attention プロット数はフーリエ変換したサンプリング数と同じにする
 
    @per 更新履歴
-     - 2018/05/23
+     - 2019/05/23
       　要修正
        基本的な機能の実装(by 1764087 木村慶豪)
  */
@@ -120,7 +120,7 @@
    @attention sample_numはsignal_sizeより小さくなければならない。
 
    @per 更新履歴
-     - 2018/05/23
+     - 2019/05/23
        基本的な機能の実装(by 1764087 木村慶豪)
  */
  double *p_s_signal(double *input_signal, int signal_size, int sampling_num);
@@ -137,7 +137,7 @@
    @attention
    @per 更新履歴　array_sizeはnum_arrayのサイズと等しくなければならない。
                 export_fileは書き込み状態で開いている必要がある。
-     - 2018/05/15
+     - 2019/05/15
        基本的な機能の実装(by 1764087 木村慶豪)
  */
  FILE *export_signal(double *num_array, int array_size, FILE *export_file);
@@ -153,7 +153,7 @@
    @attention
    @per 更新履歴　array_sizeはnum_arrayのサイズと等しくなければならない。
                 export_fileは書き込み状態で開いている必要がある。
-     - 2018/05/15
+     - 2019/05/15
        基本的な機能の実装(by 1764087 木村慶豪)
  */
  FILE *export_complex_signal(double complex *num_array, int array_size, FILE *export_file);
